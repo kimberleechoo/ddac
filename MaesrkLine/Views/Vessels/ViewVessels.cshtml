@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MaesrkLine.Models.Vessels>
+
+@{
+    ViewBag.Title = "ViewVessels";
+}
+
+<h2>Index</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.VesselName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VesselDeparture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartureFrom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VesselArrival)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArrivingTo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.VesselName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VesselDeparture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DepartureFrom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VesselArrival)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArrivingTo)
+        </td>
+       
+    </tr>
+}
+
+</table>

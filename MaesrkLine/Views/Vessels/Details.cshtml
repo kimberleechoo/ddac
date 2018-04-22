@@ -1,0 +1,58 @@
+﻿@model MaesrkLine.Models.Vessels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vessels</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VesselName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VesselName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VesselDeparture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VesselDeparture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartureFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartureFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VesselArrival)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VesselArrival)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArrivingTo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArrivingTo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
